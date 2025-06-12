@@ -242,29 +242,7 @@ header{
     }
 
 
-@media (min-width:450px) and (max-width:600px){
-    .logo{
-        display: none;
-    }
-    .nav{
-        width: 100%;
-        flex-wrap: wrap;
-        margin: 0;        
-    }
-    .min-content{
-        flex-wrap: wrap;
-        display: flex;           
-    }
-    .min-content .proudct1 , .min-content .proudct2, .min-content .proudct3{
-        display: flex;
-        gap: 10px;
-    }
-    .min-content .proudct1 .plus, .min-content .proudct2 .plus, .min-content .proudct3 .plus{
-        display: flex;
-        gap: 1px;
-    }
-    
-}
+
 .chet{
     margin: auto;
 }
@@ -328,4 +306,62 @@ header{
         color: rgba(255, 0, 0, 0.815);
         
     }
+
+    @media (min-width:450px) and (max-width:600px){
+    .logo{
+        display: none;
+    }
+    .nav{
+        width: 100%;
+        flex-wrap: wrap;
+        margin: 0;        
+    }
+    .min-content{
+        flex-wrap: wrap;
+        display: flex;           
+    }
+    .min-content .proudct1 , .min-content .proudct2, .min-content .proudct3{
+        display: flex;
+        gap: 10px;
+    }
+    .min-content .proudct1 .plus, .min-content .proudct2 .plus, .min-content .proudct3 .plus{
+        display: flex;
+        gap: 1px;
+    }
+    
+}
    }
+   @media (min-width:330px) and (max-width:449px){
+    
+    .signin{
+        display: none;
+    }
+    .regt{
+        display: none;
+    }
+    .min-content .proudct1 , .min-content .proudct2, .min-content .proudct3{
+        display: flex;
+        gap: 10px;
+
+   }
+   }
+   @media (max-width:329px){
+    .head{
+        display: flex;
+        gap: 2px;
+        justify-content: left;
+        padding: 0;
+        margin-left: 0;
+        
+    }
+    .signin{
+        display: none;
+    }
+    .regt{
+        display: none;
+    }
+    .min-content .proudct1 , .min-content .proudct2, .min-content .proudct3{
+        display: flex;
+        gap: 2px;
+   }
+}

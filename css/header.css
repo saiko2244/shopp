@@ -34,8 +34,7 @@ header{
     align-items: center;
     gap: 5px;
     text-decoration: none;
-    animation: a1 3s ease-in-out .5s infinite normal;
-    transition: .5s;
+    
     }
     & i{
         color: #0686ff;
@@ -60,14 +59,18 @@ header{
 }
 }
 }
+.logo a{
+    animation: sa1 3s ease-in-out .5s infinite normal;
+    
+}
  
-@keyframes a1 {
+@keyframes sa1 {
         0%{
             translate: 30px 0;}
         50%{
              translate: -10px 0; }
         100%{
-             translate : 25px 0;}
+             translate : 30px 0;}
         }
 
  header:hover{

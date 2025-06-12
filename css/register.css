@@ -177,10 +177,18 @@ body{
         transition: .5s;
     }
 }
-    @media (max-width:300px){
+    @media (max-width:400px){
     & .email input , & .pass input , .username input ,  button{margin-left: 0;
         width: 100px;
  }
+ .head{
+    padding: 0;
+    display: flex;
+    justify-content: right;
+    flex-wrap: wrap;
+    
+ }
+
 
 }
 .username:hover ,  .email:hover , .pass:hover , button:hover{
