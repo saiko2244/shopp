@@ -1,0 +1,99 @@
+*{
+    margin: 0;
+    padding: 0;
+
+}
+.pro7{
+    width: 550px;
+    background-color:rgba(241, 241, 235, 0.349);
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin: auto;
+    margin-top: 150px;
+    border-top: 3px solid #0000ff9d;
+    box-shadow: lch(53.23% 104.58 40 / 0.411) 0px 2px 1px 0px;
+    & .title{
+        background-color: white;
+        display: grid;
+        grid-template-rows: auto 1fr auto;
+        & .s1{
+            text-align: center;
+            font-size: 25px;
+            font-weight: 600;
+            text-decoration: underline blue;
+            letter-spacing: 2px;
+            margin-block: 8px;
+            text-transform: capitalize;
+            color: rgba(255, 0, 0, 0.781);            
+        }
+        & .p1{
+            font-size: large;
+            line-height: 35px;
+            font-weight: 500;
+        }
+        & .price{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+           & span{
+            font-size: 25px;
+            color: red;
+           }
+           & button{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 5px;
+            background-color: #0000ffea;
+            color: white;
+            border: none;
+            font-size: 18px;
+            text-transform: capitalize;
+            font-weight: bold;
+            padding: 3px;
+            margin: 5px;
+           } 
+        }
+    }
+   
+}
+@media (min-width:281px) and (max-width:550px){
+    .pro7{
+        display: grid;
+        margin: auto;
+        flex-wrap: wrap;
+        text-align: center;
+        
+        width: 300px;
+        
+    }
+    .title p{
+        width: 250px;
+    }
+    .title .price button{
+        width: 150px;
+    }
+}
+@media (max-width:280px){
+    .pro7{
+        display: grid;
+        margin: auto;
+        flex-wrap: wrap;
+        text-align: center;
+        
+        width: 150px;
+        
+    }
+    .title p{
+        width: 250px;
+        
+    }
+    .title .price{
+        display: flex;
+        margin:0;
+    }
+    .title .price button{
+        width: 130px;
+    }
+}

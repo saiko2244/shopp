@@ -1,0 +1,190 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+body{
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(to right, #8080808c , rgba(187, 186, 186, 0.589))
+    , url(../bac.jpg);
+    background-position: left;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.head{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 50px;
+    
+
+
+    & .logo{
+    padding: 20px;
+    margin-left:60px ;
+    & a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    text-decoration: none;
+    animation: a1 3s ease-in-out .5s infinite normal both;
+    transition: .5s;
+    
+    & i{
+        color: #0686ff;
+        font-size: 20px;
+     }
+     & span{
+        font-size: 20px;
+        text-transform: uppercase;
+        font-weight: 600;
+        color: rgba(12, 12, 12, 0.856);
+        letter-spacing: 3px;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+    }     
+    }
+& p{
+        font-size: large;
+        text-transform: uppercase;
+        background-image:linear-gradient(to right , rgba(255, 0, 0, 0.247) , white) ;
+       letter-spacing: 4px;
+       margin-left:25px ;
+}
+} 
+}
+@keyframes a1 {
+        0%{
+            translate: 30px 0;}
+        50%{
+             translate: -10px 0; }
+        100%{
+             translate : 30px 0;}
+        }
+.nav{
+    margin-right: 60px;
+    height: 50px;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   gap: 30px;
+    padding: 20px;
+   flex-wrap: wrap;
+   list-style: none;
+ & .signin a{
+    background-color: #7b7b7e10;
+    color: rgba(0, 0, 0, 0.719);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    border: 1px solid rgba(0, 0, 0, 0.568);
+    border-radius: 20px;
+    height: fit-content;
+    padding: 3px;
+    width: 100px;
+    text-decoration: none;
+    & i{
+        font-size: 20px;
+    }
+    & span{
+        font-size: 20px;
+        font-weight: 600;
+    }
+    
+   }
+& .regt a{
+    background-color: #7b7b7e10;
+    color: rgba(0, 0, 0, 0.719);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    border: 1px solid rgba(0, 0, 0, 0.568);
+    border-radius: 20px;
+    height: fit-content;
+    padding: 3px;
+    width: 100px;
+    text-decoration: none;
+    & i{
+        font-size: 20px;
+    }
+    & span{
+        font-size: 20px;
+        font-weight: 600;
+    }   
+   }  
+}
+.signin a:hover, .regt a:hover, .content button:hover{
+    color: black;
+    background-image: linear-gradient(to right, rgba(255, 0, 0, 0.637), rgba(128, 128, 128, 0.671));
+}
+.border{
+    width: 50%;
+    margin: auto;
+    padding: 5px;
+    border: 1px solid black;
+    & .username{
+        font-size: large;
+        font-weight: 600;
+        text-transform: capitalize;
+        & input{
+            font-size: 25px;
+            width: 100%;
+            margin-bottom: 20px;
+            transition: .5s;
+        }
+    }
+    & .email{
+        font-size: large;
+        font-weight: 600;
+        text-transform: capitalize;
+        & input{
+            font-size: 25px;
+            width: 100%;
+            margin-bottom: 20px;
+            transition: .5s;
+        }
+    }
+    & .pass{
+        font-size: large;
+        font-weight: 600;
+        text-transform: capitalize;
+        & input{
+            font-size: 25px;
+            width: 100%;
+            margin-bottom: 20px;
+            transition: .5s;
+        }
+    }
+    & .re{
+        font-size: large;
+        font-weight: 500;
+        text-transform: capitalize;
+        margin-bottom: 10px;
+    }
+    & button{
+        font-size: x-large;
+        text-transform: capitalize;
+        background-color: #0686ff;
+        color: white;
+        box-shadow: 0px 2px 2px 1px;
+        width: 100%;
+        text-align: center;
+        font-weight: bold;
+        transition: .5s;
+    }
+}
+    @media (max-width:300px){
+    & .email input , & .pass input , .username input ,  button{margin-left: 0;
+        width: 100px;
+ }
+
+}
+.username:hover ,  .email:hover , .pass:hover , button:hover{
+    scale: .9;
+}
+
+
